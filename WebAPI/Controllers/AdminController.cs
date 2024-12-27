@@ -17,16 +17,12 @@ namespace WebAPI.Controllers
         }
 
 
-
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<WorkUpdate>>> GetMembers()
         {
-            var member= await _context.WorkUpdate.ToListAsync();
-             return Ok(member);
+            var member = await _context.WorkUpdate.ToListAsync();
+            return Ok(member);
         }
-
-
 
 
         [HttpPost("RetriveUserName")]
@@ -41,34 +37,30 @@ namespace WebAPI.Controllers
             // Search for the member by email
             var member = await _context.UserLoginApi.FirstOrDefaultAsync(m => m.Email == res.Email);
 
-
-            var username = member.UserName;
+            string username = "";
 
             // Check if the member exists
-            if (member == null)
+            if (member != null)
             {
-                return NotFound("Email not found");
+                username = member.UserName;
             }
-            else
-            {
-                return Ok(username);
-            }
+            return Ok(username);
 
         }
-
-
 
 
         [HttpGet("ListOfUserNames")]
         public async Task<ActionResult<IEnumerable<string>>> ListOfUserNames()
         {
-            var uniqueUsernames = await _context.UserLoginApi.Select(w => w.UserName).Distinct().ToListAsync();
+            var uniqueUsernames = await _context.UserLoginApi.Select(w => new { w.Email, w.UserName }).ToListAsync();
+
+            if(uniqueUsernames == null)
+            {
+                return Ok();
+            }
 
             return Ok(uniqueUsernames);
         }
-
-
-
 
 
         [HttpPost("RetriveEmailthroughUserName")]
@@ -81,7 +73,7 @@ namespace WebAPI.Controllers
             }
 
             // Search for the member by email
-            var member = await _context.UserLoginApi.FirstOrDefaultAsync(m => m.UserName == res.UserName);
+            var member = await _context.UserLoginApi.FirstOrDefaultAsync(m => m.Email == res.UserName);
 
 
             var email = member.Email;
@@ -99,9 +91,6 @@ namespace WebAPI.Controllers
         }
 
 
-
-
-
         [HttpPost("updateResponseMessage")]
         public IActionResult updateResponseMessage(WorkUpdate wrk)
         {
@@ -112,5 +101,29 @@ namespace WebAPI.Controllers
         }
 
 
+        [HttpPost("Save_the_GroupDetails")]
+        public IActionResult Save_the_GroupDetails(GroupDetails grp)
+        {
+            _context.GroupDetails.Add(grp);
+            _context.SaveChangesAsync();
+            return Ok();
+        }
+
+
+        [HttpGet("GetExistingGroupName")]
+        public IActionResult GetExistingGroupName()
+        {
+            var member = _context.GroupDetails.Select(t => new
+            {
+                t.GroupName,
+                t.Description
+            });
+
+            return Ok(member);
+        }
     }
 }
+ 
+                                                                                                          
+ 
+   

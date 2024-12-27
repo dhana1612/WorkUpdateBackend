@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Data;
+using WebAPI.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,28 +12,23 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-
-
 // Configure CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigins", builder =>
+    options.AddPolicy("AllowAllOriginsWithCredentials", builder =>
     {
-        builder.WithOrigins("http://127.0.0.1:5500") 
-               .AllowAnyHeader()   // Allow any header
-               .AllowAnyMethod()   // Allow any HTTP method (GET, POST, etc.)
-               .AllowCredentials(); // Allow cookies/auth
+        builder.SetIsOriginAllowed(_ => true) // Allow all origins dynamically
+               .AllowAnyHeader()             // Allow any header
+               .AllowAnyMethod()             // Allow any HTTP method (GET, POST, etc.)
+               .AllowCredentials();          // Allow credentials (cookies, auth)
     });
 });
-
-
-
 
 builder.Services.AddDbContext<UserLoginDbContext>(options =>
    options.UseNpgsql(builder.Configuration.GetConnectionString("APIConnection"))
 );
 
-
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -45,11 +41,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Apply the CORS policy before mapping controllers
-app.UseCors("AllowSpecificOrigins");
+app.UseCors("AllowAllOriginsWithCredentials");
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<Chat>("/hubs/Chat");
 
 app.Run();

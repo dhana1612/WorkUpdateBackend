@@ -12,5 +12,11 @@ namespace WebAPI.Models
 
         //[Compare("Password", ErrorMessage = "Password Not Match")]
         public string ConfirmPassword { get; set; } = string.Empty;
+
+        public string Gender { get; set; } = string.Empty;
+
+        public DateOnly date { get; set; }
+
+        public byte[]? Profile_Image { get; set; }
     }
 }

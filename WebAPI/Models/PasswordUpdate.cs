@@ -4,7 +4,6 @@ namespace WebAPI.Models
 {
     public class PasswordUpdate
     {
-
         public string Email { get; set; } = string.Empty;
 
         [StringLength(10, MinimumLength = 6, ErrorMessage = "Enter Above 6 Character")]

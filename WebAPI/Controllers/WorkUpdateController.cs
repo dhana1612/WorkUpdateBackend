@@ -11,6 +11,8 @@ namespace WebAPI.Controllers
     public class WorkUpdateController : ControllerBase
     {
         private readonly UserLoginDbContext _context;
+
+
         public WorkUpdateController(UserLoginDbContext context)
         {
             _context = context;
@@ -32,14 +34,13 @@ namespace WebAPI.Controllers
                 _context.WorkUpdate.Add(workUpdate);
                 await _context.SaveChangesAsync();
                 return Ok("Successfully Updated.");
-               //return Redirect("DisplayWorkUpdate");
+                //return Redirect("DisplayWorkUpdate");
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error creating user : {ex.Message}");
             }
         }
-
 
 
         [HttpGet("{email}")]
@@ -58,7 +59,6 @@ namespace WebAPI.Controllers
         }
 
 
-
         [HttpPost("Delete")]
         public IActionResult Delete(WorkUpdate wrk)
         {
@@ -73,7 +73,6 @@ namespace WebAPI.Controllers
             _context.SaveChanges();
             return Ok();
         }
-
 
 
         [HttpPost("ExistingDetailsUpdate")]

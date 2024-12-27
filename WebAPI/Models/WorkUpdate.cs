@@ -12,7 +12,5 @@ namespace WebAPI.Models
         public string TaskLinks { get; set; }
         public string statusmessage { get; set; }
         public string feedbackmessage { get; set; }
-
-
     }
 }
