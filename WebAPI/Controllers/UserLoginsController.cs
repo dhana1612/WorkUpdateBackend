@@ -19,9 +19,6 @@ namespace WebAPI.Controllers
 
 
 
-
-
-
         // Create a New User
         [HttpPost]
         public async Task<IActionResult> PostUserLogin(UserLogin userLogin)
@@ -74,8 +71,6 @@ namespace WebAPI.Controllers
 
 
 
-
-
         //Both Admin & User Login
         [HttpPost("Login")]
         public async Task<IActionResult> VerifyEmailAndPhone([FromBody] VerificationResponse res)
@@ -86,6 +81,9 @@ namespace WebAPI.Controllers
 
             var member1 = await _context.AdminLogin.FirstOrDefaultAsync(m => m.Email == res.Email);
 
+            var userId = "admin@gmail.com";
+
+            var passId = "Admin";
 
             // Check if the member exists
             if (member != null)
@@ -108,11 +106,15 @@ namespace WebAPI.Controllers
                 }
                 return NotFound("Email and Password do not match.");
             }
+           
             else
             {
                 return NotFound("Email not found");
             }
         }
+
+
+
 
 
         //If User Forget their Password Means this method send a otp to reset the password

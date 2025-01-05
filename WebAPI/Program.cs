@@ -17,10 +17,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOriginsWithCredentials", builder =>
     {
-        builder.SetIsOriginAllowed(_ => true) // Allow all origins dynamically
-               .AllowAnyHeader()             // Allow any header
-               .AllowAnyMethod()             // Allow any HTTP method (GET, POST, etc.)
-               .AllowCredentials();          // Allow credentials (cookies, auth)
+        builder.SetIsOriginAllowed(_ =>true) 
+               .AllowAnyHeader()             
+               .AllowAnyMethod()             
+               .AllowCredentials();         
     });
 });
 
