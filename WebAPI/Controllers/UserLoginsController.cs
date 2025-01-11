@@ -278,10 +278,6 @@ namespace WebAPI.Controllers
         }
 
 
-
-
-
-
         [HttpPost("checkDbForGroups")]
         public async Task<IActionResult> CheckDbForGroups([FromBody] dummy d)
         {
@@ -300,3 +296,5 @@ namespace WebAPI.Controllers
 
     }
 }         
+
+

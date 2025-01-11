@@ -6978,11 +6978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\Morning Shift\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WebAPI\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Morning Shift\\AppData\\Roaming\\NuGet\\NuGet.Config",

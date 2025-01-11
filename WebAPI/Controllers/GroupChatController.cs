@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using WebAPI.Data;
 using WebAPI.Models;
 
@@ -112,5 +113,36 @@ namespace WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error creating user : {ex.Message}");
             }
         }
+
+
+
+
+
+        [HttpGet("ExistingGroupUserName")]
+        public async Task<ActionResult> ExistingGroupUserName(string groupName)
+        {
+            var existingMembers = await _context.GroupDetails.Where(x => x.GroupName == groupName).Select(b => b.UserName).ToListAsync();
+
+            var flatExistingMembers = existingMembers.SelectMany(x => x).ToList();
+
+            var allUserName = await _context.UserLoginApi.Select(b => b.UserName).ToListAsync();
+
+            var missingUserNames = allUserName.Except(flatExistingMembers).ToList();
+
+
+            return Ok(missingUserNames);
+        }
+
+
+        [HttpGet("Display_ExistingMember_In_A_Group")]
+        public async Task<ActionResult> Display_ExistingMember_In_A_Group(string groupName)
+        {
+            var existingMembers = await _context.GroupDetails.Where(x => x.GroupName == groupName).Select(b => b.UserName).ToListAsync();
+
+            var flatExistingMembers = existingMembers.SelectMany(x => x).ToList();
+
+            return Ok(flatExistingMembers);
+        }
     }
 }
+

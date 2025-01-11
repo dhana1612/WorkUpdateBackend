@@ -21,6 +21,22 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.AdminController",
+    "Method": "Add_NewMember_In_ExistingGroup",
+    "RelativePath": "api/Admin/Add_NewMember_In_ExistingGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grp",
+        "Type": "WebAPI.Models.GroupDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AdminController",
     "Method": "GetExistingGroupName",
     "RelativePath": "api/Admin/GetExistingGroupName",
     "HttpMethod": "GET",
@@ -48,6 +64,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AdminController",
+    "Method": "Remove_ExistingMember_in_the_Group",
+    "RelativePath": "api/Admin/Remove_ExistingMember_in_the_Group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grp",
+        "Type": "WebAPI.Models.GroupDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebAPI.Controllers.AdminController",
@@ -109,6 +141,38 @@
         "Name": "wrk",
         "Type": "WebAPI.Models.WorkUpdate",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.GroupChatController",
+    "Method": "Display_ExistingMember_In_A_Group",
+    "RelativePath": "api/GroupChat/Display_ExistingMember_In_A_Group",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.GroupChatController",
+    "Method": "ExistingGroupUserName",
+    "RelativePath": "api/GroupChat/ExistingGroupUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

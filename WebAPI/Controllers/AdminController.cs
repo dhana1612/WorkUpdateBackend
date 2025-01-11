@@ -121,6 +121,52 @@ namespace WebAPI.Controllers
 
             return Ok(member);
         }
+
+
+
+        [HttpPost("Add_NewMember_In_ExistingGroup")]
+        public IActionResult Add_NewMember_In_ExistingGroup(GroupDetails grp)
+        {
+            var resp = "";
+                var group = _context.GroupDetails.FirstOrDefault(x => x.GroupName == grp.GroupName);
+
+                if (group != null && grp.UserName != null)
+                {
+                    group.UserName.AddRange(grp.UserName);
+                    _context.SaveChanges();
+                    resp = "New Member Added";
+
+                }
+                
+            return Ok(resp);
+        }
+
+
+        [HttpPost("Remove_ExistingMember_in_the_Group")]
+        public IActionResult Remove_ExistingMember_in_the_Group(GroupDetails grp)
+        {
+            var resp = "";
+            var group = _context.GroupDetails.FirstOrDefault(x => x.GroupName == grp.GroupName);
+
+            if (group != null && grp.UserName != null && grp.UserName.Any())
+            {
+                foreach (var user in grp.UserName)
+                {
+                    group.UserName.Remove(user);
+                }
+
+                _context.SaveChanges();
+                resp = "Members Removed Successfully";
+            }
+            else
+            {
+                resp = "Group or UserName(s) not found";
+            }
+
+            return Ok(resp);
+        }
+
+
     }
 }
  

@@ -11,7 +11,6 @@ namespace WebAPI.Data
             
         }
 
-        
         public DbSet<Models.UserLogin> UserLoginApi { get; set; }
 
         public DbSet<Models.WorkUpdate> WorkUpdate { get; set; }
