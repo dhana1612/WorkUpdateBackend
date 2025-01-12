@@ -10,7 +10,7 @@ namespace WebAPI.Models
 
 
         [Required]
-        [Range(6666666666,9999999999,ErrorMessage ="Please Enter a Valid PhoneNumber")]
+        [Range(6000000000,9999999999,ErrorMessage ="Please Enter a Valid PhoneNumber")]
         public long PhoneNumber { get; set; }
 
 
