@@ -105,32 +105,32 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 <h4>Screenshots:</h4>
 <h6>Login Portal</h6>
 
-![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
+  ![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
 
 
  <h6>User Dashboard</h6>
  
-![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
+  ![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
 
 <h6>1. Work Status Update Model</h6>
 
-![image](https://github.com/user-attachments/assets/44654b47-8b25-4969-8c12-f5fdd83f2cf6)
+  ![image](https://github.com/user-attachments/assets/44654b47-8b25-4969-8c12-f5fdd83f2cf6)
 
 <h6>2. Work Status Edit Model</h6>
 
-![image](https://github.com/user-attachments/assets/f2d6ff2d-efd0-425d-b11c-ca18a7e17fa8)
+  ![image](https://github.com/user-attachments/assets/f2d6ff2d-efd0-425d-b11c-ca18a7e17fa8)
 
 <h6>User Details Dashboard</h6>
 
-![image](https://github.com/user-attachments/assets/3f1555fa-b257-4334-91ab-a3577d65da87)
+  ![image](https://github.com/user-attachments/assets/3f1555fa-b257-4334-91ab-a3577d65da87)
 
 <h6>Group Community</h6>
 
-![image](https://github.com/user-attachments/assets/f4d59480-fd4c-4a89-85f2-ec5cda973cf4)
+  ![image](https://github.com/user-attachments/assets/f4d59480-fd4c-4a89-85f2-ec5cda973cf4)
 
-<h6>Group Community</h6>
+<h6>Chat Page</h6>
 
-![image](https://github.com/user-attachments/assets/83f91496-3707-42b4-8ba1-1d6484f38802)
+  ![image](https://github.com/user-attachments/assets/83f91496-3707-42b4-8ba1-1d6484f38802)
 
 <br>
 
