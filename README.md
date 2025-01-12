@@ -104,17 +104,17 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 
 <h4>Screenshots:</h4>
   <h6>Login Portal</h6>
-      ![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
-
+![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
+<br>
  <h6>User Dashboard</h6>
- 
-      ![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
-
-      ![image](https://github.com/user-attachments/assets/44654b47-8b25-4969-8c12-f5fdd83f2cf6)
-
-      ![image](https://github.com/user-attachments/assets/f2d6ff2d-efd0-425d-b11c-ca18a7e17fa8)
-
-      ![image](https://github.com/user-attachments/assets/3f1555fa-b257-4334-91ab-a3577d65da87)
+![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
+<br>
+![image](https://github.com/user-attachments/assets/44654b47-8b25-4969-8c12-f5fdd83f2cf6)
+<br>
+![image](https://github.com/user-attachments/assets/f2d6ff2d-efd0-425d-b11c-ca18a7e17fa8)
+<br>
+![image](https://github.com/user-attachments/assets/3f1555fa-b257-4334-91ab-a3577d65da87)
+<br>
 
 <hr>
 
