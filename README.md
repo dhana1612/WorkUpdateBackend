@@ -105,7 +105,8 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 <h4>Screenshots:</h4>
   <h6>Login Portal</h6>
 ![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
-<br>
+
+
  <h6>User Dashboard</h6>
 ![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
 <br>
