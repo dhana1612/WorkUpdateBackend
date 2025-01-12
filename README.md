@@ -126,6 +126,59 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 
 <br>
 
+![image](https://github.com/user-attachments/assets/f4d59480-fd4c-4a89-85f2-ec5cda973cf4)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/83f91496-3707-42b4-8ba1-1d6484f38802)
+
+<br>
+
+<h6>Admin Dashboard</h6>
+
+![image](https://github.com/user-attachments/assets/dcbb3211-7d40-49d2-9d6b-8d5c64972446)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a46e37c3-2057-4afd-ac59-f70dc95474f7)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0969edee-8e99-4730-b264-6505de26e0c9)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c5adef6a-e6c1-40e4-8e6b-cec9f8af652b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ed960367-424e-4b93-a7df-2240bf7efbce)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7e2dd515-f602-4139-9c1a-1d52ea69ed07)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2f7e5d12-fe41-44d3-ae7a-4a5ecaee346b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f9d4d195-7756-4f45-9a89-8d12f0149f3f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6bc8ff20-5a7e-4561-9bd6-60527730db8f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e20f3ddb-63ff-4841-b51c-07b9b5eef7a9)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/244ade04-965d-4784-8ed6-8d1c3393847f)
+
+
 <hr>
 
 <h3>How to Run the Project</h3>
