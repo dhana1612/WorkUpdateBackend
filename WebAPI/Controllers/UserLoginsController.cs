@@ -23,7 +23,6 @@ namespace WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PostUserLogin(UserLogin userLogin)
         {
-
             // Check if the ModelState is valid
             if (!ModelState.IsValid)
             {
@@ -32,20 +31,17 @@ namespace WebAPI.Controllers
 
             try
             {
-
                 var member = await _context.UserLoginApi.FirstOrDefaultAsync(m => m.UserName == userLogin.UserName);
-
-
 
                 if (member == null)
                 {
-
                     string resp;
                     Email_2_UserName_Psd e = new Email_2_UserName_Psd();
                     bool resmessage = e.email_2_UserName_Psd(userLogin.Email, userLogin.Password, userLogin.UserName);
 
                     if (resmessage)
                     {
+                        userLogin.Role = "Intern";
                         _context.UserLoginApi.Add(userLogin);
                         await _context.SaveChangesAsync();
                         resp = "New user created successfully, and login credentials have been sent to the registered email ID.";

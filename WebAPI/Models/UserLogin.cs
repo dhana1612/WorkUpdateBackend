@@ -42,5 +42,8 @@ namespace WebAPI.Models
 
         public byte[]? Profile_Image { get; set; }
 
+
+        public string? Role { get; set; }
+
     }
 }
