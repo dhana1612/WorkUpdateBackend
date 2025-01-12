@@ -112,23 +112,23 @@ The User Dashboard is designed to allow users to manage their daily updates and 
  
 ![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
 
-<br>
+<h6>1. Work Status Update Model</h6>
 
 ![image](https://github.com/user-attachments/assets/44654b47-8b25-4969-8c12-f5fdd83f2cf6)
 
-<br>
+<h6>2. Work Status Edit Model</h6>
 
 ![image](https://github.com/user-attachments/assets/f2d6ff2d-efd0-425d-b11c-ca18a7e17fa8)
 
-<br>
+<h6>User Details Dashboard</h6>
 
 ![image](https://github.com/user-attachments/assets/3f1555fa-b257-4334-91ab-a3577d65da87)
 
-<br>
+<h6>Group Community</h6>
 
 ![image](https://github.com/user-attachments/assets/f4d59480-fd4c-4a89-85f2-ec5cda973cf4)
 
-<br>
+<h6>Group Community</h6>
 
 ![image](https://github.com/user-attachments/assets/83f91496-3707-42b4-8ba1-1d6484f38802)
 
@@ -178,6 +178,9 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 
 ![image](https://github.com/user-attachments/assets/244ade04-965d-4784-8ed6-8d1c3393847f)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/b9578e71-9a8e-4f3a-b4c0-1d79195f56e0)
 
 <hr>
 
