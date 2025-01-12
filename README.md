@@ -107,8 +107,7 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 
 ![image](https://github.com/user-attachments/assets/1c93d8b3-40a2-4abb-a3a4-27403da4f2d1)
 
-
- <h5>User Dashboard</h5>
+<h5>User Dashboard</h5>
  
 ![image](https://github.com/user-attachments/assets/03ac0ff0-92ef-4ad9-a454-78ad3afe6511)
 
@@ -131,7 +130,6 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 <h5>Chat Page</h5>
 
 ![image](https://github.com/user-attachments/assets/83f91496-3707-42b4-8ba1-1d6484f38802)
-
 
 <h5>Admin Dashboard</h5>
 
