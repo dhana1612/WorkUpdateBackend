@@ -114,5 +114,5 @@ The User Dashboard is designed to allow users to manage their daily updates and 
 
 
 ### Backend Code Link
-[WorkUpdateFrontend GitHub Repository](https://github.com/dhana1612/WorkUpdateBackend.git)
+[WorkUpdateFrontend GitHub Repository](https://github.com/dhana1612/WorkUpdateFrontend.git)
 
