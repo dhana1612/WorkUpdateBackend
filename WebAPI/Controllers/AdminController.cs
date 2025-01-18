@@ -168,7 +168,7 @@ namespace WebAPI.Controllers
         [HttpGet("Retrive_UserName_Role")]
         public async Task<ActionResult<IEnumerable<string>>> Retrive_UserName_Role()
         {
-            var Member = await _context.UserLoginApi.Select(w => new { w.UserName, w.Role, w.Joining_Date, w.Experience }).ToListAsync();
+            var Member = await _context.UserLoginApi.Select(w => new { w.UserName, w.Role, w.Joining_Date }).ToListAsync();
 
             if (Member == null)
             {

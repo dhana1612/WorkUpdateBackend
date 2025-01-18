@@ -43,15 +43,6 @@ namespace WebAPI.Controllers
                     {
                         userLogin.Role = "Intern";
 
-
-                        var Joining_Date = userLogin.Joining_Date;
-
-                        DateOnly currentDate = DateOnly.FromDateTime(DateTime.Now);
-
-                        var calculate_the_Expericence = Calculate_the_Expericence(Joining_Date, currentDate);
-
-                        userLogin.Experience = calculate_the_Expericence;
-
                         _context.UserLoginApi.Add(userLogin);
                         await _context.SaveChangesAsync();
                         resp = "New user created successfully, and login credentials have been sent to the registered email ID.";
@@ -73,32 +64,6 @@ namespace WebAPI.Controllers
             }
         }
 
-
-        public String Calculate_the_Expericence(DateOnly Joining_Date, DateOnly currentDate)
-        {
-            // Calculate the difference
-            int years = currentDate.Year - Joining_Date.Year;
-            int months = currentDate.Month - Joining_Date.Month;
-            int days = currentDate.Day - Joining_Date.Day;
-
-            // Adjust if months or days are negative
-            if (days < 0)
-            {
-                months--;
-                days += DateTime.DaysInMonth(currentDate.Year, currentDate.AddMonths(-1).Month);
-            }
-
-            if (months < 0)
-            {
-                years--;
-                months += 12;
-            }
-
-            // Output the result
-            string Experience = ($"{years} years, {months} months, and {days} days.");
-
-            return Experience;
-        }
 
 
         //Both Admin & User Login

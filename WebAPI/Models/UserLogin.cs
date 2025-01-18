@@ -48,7 +48,6 @@ namespace WebAPI.Models
         [Required]
         public DateOnly Joining_Date { get; set; }
 
-        public string? Experience { get; set; }
 
     }
 }
