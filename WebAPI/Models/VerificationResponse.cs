@@ -18,5 +18,9 @@ namespace WebAPI.Models
         public DateOnly date { get; set; }
 
         public byte[]? Profile_Image { get; set; }
+
+        public string? Role { get; set; }
+
+        public DateOnly Joining_Date { get; set; }
     }
 }

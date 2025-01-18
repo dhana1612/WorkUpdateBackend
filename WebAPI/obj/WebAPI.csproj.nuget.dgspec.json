@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\WebAPI.csproj": {}
+    "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\WebAPI.csproj": {
+    "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\Morning Shift\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\obj\\",
+        "outputPath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Morning Shift\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -95,6 +94,10 @@
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.100-rc.1.24452.12, 9.0.100-rc.1.24452.12]"
+            },
             {
               "name": "Microsoft.NETCore.App.Host.win-x86",
               "version": "[8.0.8, 8.0.8]"

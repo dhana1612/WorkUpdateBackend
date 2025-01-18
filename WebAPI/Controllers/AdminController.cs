@@ -177,6 +177,24 @@ namespace WebAPI.Controllers
 
             return Ok(Member);
         }
+
+
+
+        [HttpPost("updateRole_Database")]
+        public IActionResult updateRole_Database(VerificationResponse res)
+        {
+            var user = _context.UserLoginApi.SingleOrDefault(u => u.UserName == res.UserName);
+            var resp = "Failed";
+            if (user == null)
+            {
+                user.Role = res.Role;
+                _context.SaveChanges();
+                resp = "success";
+            }
+
+
+            return Ok(resp);
+        }
     }
 }
  
