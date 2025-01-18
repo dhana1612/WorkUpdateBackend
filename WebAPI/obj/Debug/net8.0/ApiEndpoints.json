@@ -166,6 +166,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPI.Controllers.AdminController",
+    "Method": "updateRole_Database",
+    "RelativePath": "api/Admin/updateRole_Database",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "res",
+        "Type": "WebAPI.Models.VerificationResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPI.Controllers.GroupChatController",
     "Method": "Display_ExistingMember_In_A_Group",
     "RelativePath": "api/GroupChat/Display_ExistingMember_In_A_Group",

@@ -181,11 +181,11 @@ namespace WebAPI.Controllers
 
 
         [HttpPost("updateRole_Database")]
-        public IActionResult updateRole_Database(VerificationResponse res)
+        public IActionResult updateRole_Database([FromBody] VerificationResponse res)
         {
             var user = _context.UserLoginApi.SingleOrDefault(u => u.UserName == res.UserName);
             var resp = "Failed";
-            if (user == null)
+            if (user != null)
             {
                 user.Role = res.Role;
                 _context.SaveChanges();
