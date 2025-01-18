@@ -189,7 +189,7 @@ namespace WebAPI.Controllers
             {
                 user.Role = res.Role;
                 _context.SaveChanges();
-                resp = "success";
+                resp = "";
             }
 
 
