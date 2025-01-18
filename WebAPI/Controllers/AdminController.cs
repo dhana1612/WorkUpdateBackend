@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Data;
 using WebAPI.Models;
@@ -123,7 +122,6 @@ namespace WebAPI.Controllers
         }
 
 
-
         [HttpPost("Add_NewMember_In_ExistingGroup")]
         public IActionResult Add_NewMember_In_ExistingGroup(GroupDetails grp)
         {
@@ -167,11 +165,10 @@ namespace WebAPI.Controllers
         }
 
 
-
         [HttpGet("Retrive_UserName_Role")]
         public async Task<ActionResult<IEnumerable<string>>> Retrive_UserName_Role()
         {
-            var Member = await _context.UserLoginApi.Select(w => new { w.UserName, w.Role }).ToListAsync();
+            var Member = await _context.UserLoginApi.Select(w => new { w.UserName, w.Role, w.Joining_Date, w.Experience }).ToListAsync();
 
             if (Member == null)
             {

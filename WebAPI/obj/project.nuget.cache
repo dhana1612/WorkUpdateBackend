@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yiMT8c39FE8=",
+  "dgSpecHash": "4voBYutb/y4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Morning Shift\\OneDrive\\Desktop\\WorkUpdate\\WebAPI\\webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morning Shift\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Morning Shift\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -148,7 +148,6 @@
     "C:\\Users\\Morning Shift\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "C:\\Users\\Morning Shift\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Morning Shift\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Morning Shift\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.100-rc.1.24452.12\\microsoft.net.sdk.compilers.toolset.9.0.100-rc.1.24452.12.nupkg.sha512",
     "C:\\Users\\Morning Shift\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\8.0.8\\microsoft.netcore.app.host.win-x86.8.0.8.nupkg.sha512"
   ],
   "logs": [

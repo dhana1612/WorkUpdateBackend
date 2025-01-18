@@ -45,5 +45,10 @@ namespace WebAPI.Models
 
         public string? Role { get; set; }
 
+        [Required]
+        public DateOnly Joining_Date { get; set; }
+
+        public string? Experience { get; set; }
+
     }
 }
