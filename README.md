@@ -196,8 +196,6 @@ The User Dashboard is designed to allow users to manage their daily updates and 
   <li>Access the application via a web browser.</li>
 </ul>
 
-<h4>Screenshots:</h4>
-
 
 
 
